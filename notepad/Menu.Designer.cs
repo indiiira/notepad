@@ -31,7 +31,7 @@ namespace notepad
         {
             this.components = new System.ComponentModel.Container();
             this.FormMenu = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.File = new System.Windows.Forms.ToolStripMenuItem();
             this.FileNew = new System.Windows.Forms.ToolStripMenuItem();
             this.FileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.FileSave = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +39,7 @@ namespace notepad
             this.FilePageParam = new System.Windows.Forms.ToolStripMenuItem();
             this.FilePrint = new System.Windows.Forms.ToolStripMenuItem();
             this.FileExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.правкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Pravka = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCansel = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCut = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCopy = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,12 +49,12 @@ namespace notepad
             this.EditGo = new System.Windows.Forms.ToolStripMenuItem();
             this.EditGiveAll = new System.Windows.Forms.ToolStripMenuItem();
             this.EditTime = new System.Windows.Forms.ToolStripMenuItem();
-            this.форматToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Format = new System.Windows.Forms.ToolStripMenuItem();
             this.Transfer = new System.Windows.Forms.ToolStripMenuItem();
             this.Font = new System.Windows.Forms.ToolStripMenuItem();
-            this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.View = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Spravka = new System.Windows.Forms.ToolStripMenuItem();
             this.Help = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -84,11 +84,11 @@ namespace notepad
             // 
             this.FormMenu.BackColor = System.Drawing.Color.LightCoral;
             this.FormMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.правкаToolStripMenuItem,
-            this.форматToolStripMenuItem,
-            this.видToolStripMenuItem,
-            this.справкаToolStripMenuItem});
+            this.File,
+            this.Pravka,
+            this.Format,
+            this.View,
+            this.Spravka});
             this.FormMenu.Location = new System.Drawing.Point(0, 0);
             this.FormMenu.Name = "FormMenu";
             this.FormMenu.Size = new System.Drawing.Size(800, 24);
@@ -96,9 +96,9 @@ namespace notepad
             this.FormMenu.Text = "Блокнот";
             this.FormMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FormMenu_ItemClicked);
             // 
-            // файлToolStripMenuItem
+            // File
             // 
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileNew,
             this.FileOpen,
             this.FileSave,
@@ -106,10 +106,10 @@ namespace notepad
             this.FilePageParam,
             this.FilePrint,
             this.FileExit});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.файлToolStripMenuItem.Text = "Файл";
-            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
+            this.File.Name = "File";
+            this.File.Size = new System.Drawing.Size(48, 20);
+            this.File.Text = "Файл";
+            this.File.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // FileNew
             // 
@@ -174,10 +174,10 @@ namespace notepad
             this.FileExit.Text = "Выход";
             this.FileExit.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
-            // правкаToolStripMenuItem
+            // Pravka
             // 
-            this.правкаToolStripMenuItem.BackColor = System.Drawing.Color.LightCoral;
-            this.правкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Pravka.BackColor = System.Drawing.Color.LightCoral;
+            this.Pravka.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.EditCansel,
             this.EditCut,
             this.EditCopy,
@@ -187,9 +187,10 @@ namespace notepad
             this.EditGo,
             this.EditGiveAll,
             this.EditTime});
-            this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
-            this.правкаToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.правкаToolStripMenuItem.Text = "Правка";
+            this.Pravka.Name = "Pravka";
+            this.Pravka.Size = new System.Drawing.Size(59, 20);
+            this.Pravka.Text = "Правка";
+            this.Pravka.Click += new System.EventHandler(this.Pravka_Click);
             // 
             // EditCansel
             // 
@@ -274,14 +275,14 @@ namespace notepad
             this.EditTime.Text = "Время и дата";
             this.EditTime.Click += new System.EventHandler(this.времяИДатаToolStripMenuItem_Click);
             // 
-            // форматToolStripMenuItem
+            // Format
             // 
-            this.форматToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Format.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Transfer,
             this.Font});
-            this.форматToolStripMenuItem.Name = "форматToolStripMenuItem";
-            this.форматToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.форматToolStripMenuItem.Text = "Формат";
+            this.Format.Name = "Format";
+            this.Format.Size = new System.Drawing.Size(62, 20);
+            this.Format.Text = "Формат";
             // 
             // Transfer
             // 
@@ -301,13 +302,13 @@ namespace notepad
             this.Font.Text = "Шрифт";
             this.Font.Click += new System.EventHandler(this.Font_Click);
             // 
-            // видToolStripMenuItem
+            // View
             // 
-            this.видToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.View.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusStrip});
-            this.видToolStripMenuItem.Name = "видToolStripMenuItem";
-            this.видToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.видToolStripMenuItem.Text = "Вид";
+            this.View.Name = "View";
+            this.View.Size = new System.Drawing.Size(39, 20);
+            this.View.Text = "Вид";
             // 
             // StatusStrip
             // 
@@ -320,14 +321,14 @@ namespace notepad
             this.StatusStrip.Text = "Строка состояния ";
             this.StatusStrip.Click += new System.EventHandler(this.StatusStrip_Click);
             // 
-            // справкаToolStripMenuItem
+            // Spravka
             // 
-            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Spravka.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Help});
-            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.справкаToolStripMenuItem.Text = "Справка";
-            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
+            this.Spravka.Name = "Spravka";
+            this.Spravka.Size = new System.Drawing.Size(65, 20);
+            this.Spravka.Text = "Справка";
+            this.Spravka.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // Help
             // 
@@ -399,6 +400,7 @@ namespace notepad
             this.WordCount.Name = "WordCount";
             this.WordCount.Size = new System.Drawing.Size(13, 17);
             this.WordCount.Text = "0";
+            this.WordCount.Click += new System.EventHandler(this.WordCount_Click);
             // 
             // StatusSpace
             // 
@@ -492,7 +494,7 @@ namespace notepad
         #endregion
 
         private System.Windows.Forms.MenuStrip FormMenu;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem File;
         private System.Windows.Forms.ToolStripMenuItem FileNew;
         private System.Windows.Forms.ToolStripMenuItem FileOpen;
         private System.Windows.Forms.ToolStripMenuItem FileSave;
@@ -500,7 +502,7 @@ namespace notepad
         private System.Windows.Forms.ToolStripMenuItem FilePageParam;
         private System.Windows.Forms.ToolStripMenuItem FilePrint;
         private System.Windows.Forms.ToolStripMenuItem FileExit;
-        private System.Windows.Forms.ToolStripMenuItem правкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Pravka;
         private System.Windows.Forms.ToolStripMenuItem EditCansel;
         private System.Windows.Forms.ToolStripMenuItem EditCut;
         private System.Windows.Forms.ToolStripMenuItem EditCopy;
@@ -509,12 +511,12 @@ namespace notepad
         private System.Windows.Forms.ToolStripMenuItem EditFind;
         private System.Windows.Forms.ToolStripMenuItem EditGiveAll;
         private System.Windows.Forms.ToolStripMenuItem EditTime;
-        private System.Windows.Forms.ToolStripMenuItem форматToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Format;
         private System.Windows.Forms.ToolStripMenuItem Transfer;
         private System.Windows.Forms.ToolStripMenuItem Font;
-        private System.Windows.Forms.ToolStripMenuItem видToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem View;
         private System.Windows.Forms.ToolStripMenuItem StatusStrip;
-        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Spravka;
         private System.Windows.Forms.ToolStripMenuItem Help;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;

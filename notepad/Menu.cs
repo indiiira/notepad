@@ -22,7 +22,7 @@ namespace notepad
         public Menu(string fileName) // Открытие программы документом
         {
             InitializeComponent();
-            if (!string.IsNullOrEmpty(fileName) && File.Exists(fileName))
+            if (!string.IsNullOrEmpty(fileName) && System.IO.File.Exists(fileName))
             {
                 try
                 {
@@ -355,6 +355,16 @@ else
         }
 
         private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WordCount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pravka_Click(object sender, EventArgs e)
         {
 
         }
