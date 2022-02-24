@@ -75,12 +75,14 @@ namespace notepad
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.FormMenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // FormMenu
             // 
+            this.FormMenu.BackColor = System.Drawing.Color.LightCoral;
             this.FormMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.правкаToolStripMenuItem,
@@ -111,6 +113,7 @@ namespace notepad
             // 
             // FileNew
             // 
+            this.FileNew.BackColor = System.Drawing.Color.LightCoral;
             this.FileNew.Name = "FileNew";
             this.FileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.FileNew.Size = new System.Drawing.Size(226, 22);
@@ -119,6 +122,7 @@ namespace notepad
             // 
             // FileOpen
             // 
+            this.FileOpen.BackColor = System.Drawing.Color.LightCoral;
             this.FileOpen.Name = "FileOpen";
             this.FileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.FileOpen.Size = new System.Drawing.Size(226, 22);
@@ -127,6 +131,7 @@ namespace notepad
             // 
             // FileSave
             // 
+            this.FileSave.BackColor = System.Drawing.Color.LightCoral;
             this.FileSave.Name = "FileSave";
             this.FileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.FileSave.Size = new System.Drawing.Size(226, 22);
@@ -135,6 +140,7 @@ namespace notepad
             // 
             // FileSaveAs
             // 
+            this.FileSaveAs.BackColor = System.Drawing.Color.LightCoral;
             this.FileSaveAs.Name = "FileSaveAs";
             this.FileSaveAs.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.S)));
@@ -144,6 +150,7 @@ namespace notepad
             // 
             // FilePageParam
             // 
+            this.FilePageParam.BackColor = System.Drawing.Color.LightCoral;
             this.FilePageParam.Name = "FilePageParam";
             this.FilePageParam.Size = new System.Drawing.Size(226, 22);
             this.FilePageParam.Text = "Параметры страницы";
@@ -151,6 +158,7 @@ namespace notepad
             // 
             // FilePrint
             // 
+            this.FilePrint.BackColor = System.Drawing.Color.LightCoral;
             this.FilePrint.Name = "FilePrint";
             this.FilePrint.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.FilePrint.Size = new System.Drawing.Size(226, 22);
@@ -159,6 +167,7 @@ namespace notepad
             // 
             // FileExit
             // 
+            this.FileExit.BackColor = System.Drawing.Color.LightCoral;
             this.FileExit.Name = "FileExit";
             this.FileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.FileExit.Size = new System.Drawing.Size(226, 22);
@@ -167,6 +176,7 @@ namespace notepad
             // 
             // правкаToolStripMenuItem
             // 
+            this.правкаToolStripMenuItem.BackColor = System.Drawing.Color.LightCoral;
             this.правкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.EditCansel,
             this.EditCut,
@@ -183,6 +193,7 @@ namespace notepad
             // 
             // EditCansel
             // 
+            this.EditCansel.BackColor = System.Drawing.Color.LightCoral;
             this.EditCansel.Name = "EditCansel";
             this.EditCansel.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.EditCansel.Size = new System.Drawing.Size(212, 22);
@@ -191,6 +202,7 @@ namespace notepad
             // 
             // EditCut
             // 
+            this.EditCut.BackColor = System.Drawing.Color.LightCoral;
             this.EditCut.Name = "EditCut";
             this.EditCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.EditCut.Size = new System.Drawing.Size(212, 22);
@@ -199,6 +211,7 @@ namespace notepad
             // 
             // EditCopy
             // 
+            this.EditCopy.BackColor = System.Drawing.Color.LightCoral;
             this.EditCopy.Name = "EditCopy";
             this.EditCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.EditCopy.Size = new System.Drawing.Size(212, 22);
@@ -207,6 +220,8 @@ namespace notepad
             // 
             // EditPaste
             // 
+            this.EditPaste.BackColor = System.Drawing.Color.LightCoral;
+            this.EditPaste.ForeColor = System.Drawing.SystemColors.ControlText;
             this.EditPaste.Name = "EditPaste";
             this.EditPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.EditPaste.Size = new System.Drawing.Size(212, 22);
@@ -215,6 +230,7 @@ namespace notepad
             // 
             // EditDel
             // 
+            this.EditDel.BackColor = System.Drawing.Color.LightCoral;
             this.EditDel.Name = "EditDel";
             this.EditDel.ShortcutKeys = System.Windows.Forms.Keys.Delete;
             this.EditDel.Size = new System.Drawing.Size(212, 22);
@@ -223,6 +239,7 @@ namespace notepad
             // 
             // EditFind
             // 
+            this.EditFind.BackColor = System.Drawing.Color.LightCoral;
             this.EditFind.Name = "EditFind";
             this.EditFind.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.EditFind.Size = new System.Drawing.Size(212, 22);
@@ -231,6 +248,7 @@ namespace notepad
             // 
             // EditGo
             // 
+            this.EditGo.BackColor = System.Drawing.Color.LightCoral;
             this.EditGo.Name = "EditGo";
             this.EditGo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.EditGo.Size = new System.Drawing.Size(212, 22);
@@ -240,6 +258,7 @@ namespace notepad
             // 
             // EditGiveAll
             // 
+            this.EditGiveAll.BackColor = System.Drawing.Color.LightCoral;
             this.EditGiveAll.Name = "EditGiveAll";
             this.EditGiveAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.EditGiveAll.Size = new System.Drawing.Size(212, 22);
@@ -248,6 +267,7 @@ namespace notepad
             // 
             // EditTime
             // 
+            this.EditTime.BackColor = System.Drawing.Color.LightCoral;
             this.EditTime.Name = "EditTime";
             this.EditTime.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.EditTime.Size = new System.Drawing.Size(212, 22);
@@ -265,6 +285,7 @@ namespace notepad
             // 
             // Transfer
             // 
+            this.Transfer.BackColor = System.Drawing.Color.LightCoral;
             this.Transfer.CheckOnClick = true;
             this.Transfer.Name = "Transfer";
             this.Transfer.Size = new System.Drawing.Size(183, 22);
@@ -274,6 +295,7 @@ namespace notepad
             // 
             // Font
             // 
+            this.Font.BackColor = System.Drawing.Color.LightCoral;
             this.Font.Name = "Font";
             this.Font.Size = new System.Drawing.Size(183, 22);
             this.Font.Text = "Шрифт";
@@ -289,6 +311,7 @@ namespace notepad
             // 
             // StatusStrip
             // 
+            this.StatusStrip.BackColor = System.Drawing.Color.LightCoral;
             this.StatusStrip.Checked = true;
             this.StatusStrip.CheckOnClick = true;
             this.StatusStrip.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -304,9 +327,11 @@ namespace notepad
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // Help
             // 
+            this.Help.BackColor = System.Drawing.Color.LightCoral;
             this.Help.Name = "Help";
             this.Help.Size = new System.Drawing.Size(180, 22);
             this.Help.Text = "О программе";
@@ -323,6 +348,7 @@ namespace notepad
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.LightCoral;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.StatusLines,
@@ -346,7 +372,7 @@ namespace notepad
             // 
             // StatusLines
             // 
-            this.StatusLines.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.StatusLines.BackColor = System.Drawing.Color.LightCoral;
             this.StatusLines.Name = "StatusLines";
             this.StatusLines.Size = new System.Drawing.Size(106, 17);
             this.StatusLines.Text = "Количество строк";
@@ -354,14 +380,14 @@ namespace notepad
             // 
             // StatusLinesCount
             // 
-            this.StatusLinesCount.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.StatusLinesCount.BackColor = System.Drawing.Color.LightCoral;
             this.StatusLinesCount.Name = "StatusLinesCount";
             this.StatusLinesCount.Size = new System.Drawing.Size(13, 17);
             this.StatusLinesCount.Text = "0";
             // 
             // StatusWord
             // 
-            this.StatusWord.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.StatusWord.BackColor = System.Drawing.Color.LightCoral;
             this.StatusWord.Name = "StatusWord";
             this.StatusWord.Size = new System.Drawing.Size(104, 17);
             this.StatusWord.Text = "Количество слов:";
@@ -369,41 +395,42 @@ namespace notepad
             // 
             // WordCount
             // 
-            this.WordCount.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.WordCount.BackColor = System.Drawing.Color.LightCoral;
             this.WordCount.Name = "WordCount";
             this.WordCount.Size = new System.Drawing.Size(13, 17);
             this.WordCount.Text = "0";
             // 
             // StatusSpace
             // 
-            this.StatusSpace.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.StatusSpace.BackColor = System.Drawing.Color.LightCoral;
             this.StatusSpace.Name = "StatusSpace";
             this.StatusSpace.Size = new System.Drawing.Size(142, 17);
             this.StatusSpace.Text = "Символов с пробелами:";
             // 
             // SpaceCount
             // 
-            this.SpaceCount.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.SpaceCount.BackColor = System.Drawing.Color.LightCoral;
             this.SpaceCount.Name = "SpaceCount";
             this.SpaceCount.Size = new System.Drawing.Size(13, 17);
             this.SpaceCount.Text = "0";
             // 
             // StatusNotSpace
             // 
-            this.StatusNotSpace.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.StatusNotSpace.BackColor = System.Drawing.Color.LightCoral;
             this.StatusNotSpace.Name = "StatusNotSpace";
             this.StatusNotSpace.Size = new System.Drawing.Size(145, 17);
             this.StatusNotSpace.Text = "Символов без пробелов:";
             // 
             // CountNotSpace
             // 
-            this.CountNotSpace.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.CountNotSpace.BackColor = System.Drawing.Color.LightCoral;
             this.CountNotSpace.Name = "CountNotSpace";
             this.CountNotSpace.Size = new System.Drawing.Size(13, 17);
             this.CountNotSpace.Text = "0";
             // 
             // textBox
             // 
+            this.textBox.BackColor = System.Drawing.Color.RosyBrown;
             this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox.Location = new System.Drawing.Point(0, 24);
             this.textBox.Multiline = true;
@@ -426,6 +453,15 @@ namespace notepad
             // pageSetupDialog
             // 
             this.pageSetupDialog.Document = this.printDocument;
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Apply += new System.EventHandler(this.fontDialog1_Apply);
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
             // 
             // Menu
             // 
@@ -500,6 +536,7 @@ namespace notepad
         private System.Windows.Forms.PageSetupDialog pageSetupDialog;
         internal System.Windows.Forms.ToolStripMenuItem EditGo;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
     }
 }
 

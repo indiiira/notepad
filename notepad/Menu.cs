@@ -101,6 +101,9 @@ else
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             tbChange = true;
+            TextWork.StatusAnalize(ref textBox, ref StatusLinesCount, ref WordCount, ref SpaceCount, ref CountNotSpace);
+
+            TextWork.mEditEnableds(ref textBox, ref EditCopy, ref EditCut, ref EditDel, ref EditFind, ref EditGo);
         }
 
         private void FormMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -293,8 +296,7 @@ else
 
         private void EditGo_TextChanged(object sender, EventArgs e)
         {
-            TextWork.StatusAnalize(ref textBox, ref StatusLinesCount, ref WordCount, ref SpaceCount, ref CountNotSpace);
-            TextWork.mEditEnableds(ref textBox, ref EditCopy, ref EditCut, ref EditDel, ref EditFind, ref EditGo);
+         
         }
 
         private void Font_Click(object sender, EventArgs e)
@@ -345,6 +347,16 @@ else
 
             AboutForm about = new AboutForm();
             about.Show();
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

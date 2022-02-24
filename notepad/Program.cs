@@ -26,6 +26,7 @@ namespace notepad
             {
                 Application.Run(new Menu());
             }
+            
         }
     }
 }
